@@ -1,6 +1,4 @@
-"use client"
 import { Arrow } from "./svgs";
-import Link from "next/link";
 import { motion } from "framer-motion";
 import { projects } from "../data/data";
 
@@ -51,7 +49,7 @@ const Projects = () => {
                                     {project.desc}
                                 </p>
 
-                                <Link
+                                <a
                                     href={project.link}
                                     target="_blank"
                                     rel="noreferrer"
@@ -64,7 +62,7 @@ const Projects = () => {
                                         <span className="text-sm font-medium">View Project</span>
                                         <Arrow className="w-4 h-4 transform group-hover/link:translate-x-1 transition-transform" />
                                     </motion.div>
-                                </Link>
+                                </a>
 
                                 <div className="h-[2px] w-full bg-gradient-to-r from-purple-500/50 to-blue-500/50 transform scale-x-0 group-hover:scale-x-100 transition-transform duration-500 absolute bottom-0 left-0" />
                             </div>
